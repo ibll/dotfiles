@@ -1,0 +1,12 @@
+# # # # # # # # # # # 
+#       iTerm       #
+# # # # # # # # # # #
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/System/iTerm/Settings"
+
+# Tell iTerm to use the custom preferences in the directory
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+# Install iTerm custom theme
+open "${HOME}/.dotfiles/System/iTerm/Lovelace_Trans.itermcolors"
