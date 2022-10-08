@@ -3,7 +3,6 @@
 #Stops script if there is an error
 set -e
 
-
 info_echo "Installing or updating chezmoi ..."
 brew bundle --file=- <<EOF
     brew 'chezmoi'
@@ -18,9 +17,9 @@ fi
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# # # # # # # # # # # 
+#        App        #
+#                   #
 #       iTerm       #
-# # # # # # # # # # #
 
 # Specify the preferences directory
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/System/iTerm/Settings"
