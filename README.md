@@ -2,7 +2,7 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 
 # Installation Instructions
 
-1. [Download `.laptop`](dot_dotfiles/laptop.sh)
+1. [Download `laptop.sh`](dot_dotfiles/laptop.sh)
 2. Run .laptop `sh /path/to/laptop.sh`
 3. Pray it works correctly!
 
