@@ -14,7 +14,7 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 1. Backup External Data
 	- Brewfile dump - Keeps [`brew`](https://brew.sh) files up to date
 		```
-		brewfile bundle dump --force
+		brew bundle dump --force
 		```
 
  	- Raycast Export - Keeps [Raycast](https://www.raycast.com/) configuration current
