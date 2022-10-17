@@ -693,6 +693,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>219A7414-F028-4B5B-96B0-759A73061121</string>
+	<key>Default Toolbelt Width</key>
+	<real>250</real>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>EnableAPIServer</key>
@@ -849,13 +851,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.83375310897827148</real>
+				<real>0.83529411764705885</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.8839111328125</real>
+				<real>0.88235294117647056</real>
 				<key>Red Component</key>
-				<real>0.49444857239723206</real>
+				<real>0.49411764705882355</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -940,11 +942,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.6369813084602356</real>
+				<real>0.63529411764705879</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.5417633056640625</real>
+				<real>0.54117647058823526</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -955,13 +957,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12156862745098039</real>
+				<real>0.12156862765550613</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.074509803921568626</real>
+				<real>0.074509806931018829</real>
 				<key>Red Component</key>
-				<real>0.054901960784313725</real>
+				<real>0.054901961237192154</real>
 			</dict>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
@@ -1458,14 +1460,16 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.86970102787017822</real>
+				<real>0.87058824300765991</real>
 				<key>Red Component</key>
-				<real>0.75813239812850952</real>
+				<real>0.75686275959014893</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
 			<string>A</string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -2508,6 +2512,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -2852,6 +2858,10 @@
 	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+	</array>
 	<key>UIElementRequiresHotkeys</key>
 	<true/>
 	<key>UseBorder</key>
