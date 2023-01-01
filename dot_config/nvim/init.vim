@@ -5,5 +5,6 @@ set number
 hi ErrorMsg ctermfg=black
 
 call plug#begin()
+Plug 'nvim-treesitter/nvim-treesitter'
 " Add plugins here
 call plug#end()

@@ -1,0 +1,9 @@
+theme = "catppuccin_mocha"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name", "file-encoding", "file-type"]
+right = ["selections", "position", "position-percentage"]
+
+[editor.cursor-shape]
+"insert" = "bar"
