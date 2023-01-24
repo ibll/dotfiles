@@ -21,7 +21,7 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 		1. Open Raycast
 		2. Export Settings & Data
 			- Password in Bitwarden
-			- Located in `~/.dotfiles/System/Raycast`
+			- Located in `~/.dotfiles/System/Raycast/Backups/`
 	
 2. Sync modified files to Chezmoi
 	```
