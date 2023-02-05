@@ -50,15 +50,15 @@ brew "yt-dlp"
 brew "zsh"
 brew "teamookla/speedtest/speedtest"
 cask "arc"
-cask "betterdiscord-installer"
 cask "bitwarden"
 cask "blackhole-2ch"
 cask "blender"
 cask "blockbench"
-cask "discord"
+cask "calibre"
 cask "fig"
 cask "firefox"
 cask "firefox-nightly"
+cask "font-twitter-color-emoji"
 cask "hiddenbar"
 cask "iina"
 cask "imageoptim"
@@ -85,6 +85,7 @@ mas "DevCleaner", id: 1388020431
 mas "Hand Mirror", id: 1502839586
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
+mas "Microsoft PowerPoint", id: 462062816
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Prime Video", id: 545519333
