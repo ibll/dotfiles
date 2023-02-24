@@ -1,0 +1,10 @@
+directory: ~/Music/Music/media.localized/Music
+library: ~/Documents/Misc/musiclibrary.db
+import:
+  copy: no
+plugins: spotify bandcamp lyrics lastgenre # fetchart embedart
+
+embedart:
+  ifempty: yes
+  maxwidth: 512
+  remove_art_file: yes
