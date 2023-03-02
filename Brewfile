@@ -60,19 +60,20 @@ cask "blackhole-2ch"
 cask "blender"
 cask "blockbench"
 cask "calibre"
+cask "cleanshot"
 cask "fig"
 cask "firefox"
-cask "firefox-nightly"
 cask "font-twitter-color-emoji"
 cask "hiddenbar"
 cask "iina"
 cask "imageoptim"
 cask "iterm2"
 cask "krita"
+cask "linearmouse"
 cask "maccy"
+cask "microsoft-edge"
 cask "obsidian"
 cask "open-in-code"
-cask "openemu"
 cask "openra"
 cask "prism"
 cask "raycast"
@@ -85,12 +86,10 @@ cask "vlc"
 cask "zulu8"
 mas "Amphetamine", id: 937984704
 mas "Backtrack", id: 1477089520
-mas "Color Picker", id: 1545870783
 mas "DevCleaner", id: 1388020431
 mas "Hand Mirror", id: 1502839586
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
-mas "Microsoft PowerPoint", id: 462062816
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Prime Video", id: 545519333
