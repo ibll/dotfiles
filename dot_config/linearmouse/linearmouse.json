@@ -44,8 +44,17 @@
         }
       },
       "scrolling" : {
+        "speed" : {
+          "vertical" : 33.88
+        },
+        "acceleration" : {
+          "vertical" : 0
+        },
         "reverse" : {
           "vertical" : true
+        },
+        "distance" : {
+          "vertical" : "auto"
         }
       }
     }

@@ -2,7 +2,7 @@ directory: ~/Music/Music/media.localized/Music
 library: ~/Documents/Misc/musiclibrary.db
 import:
   copy: no
-plugins: spotify bandcamp lyrics lastgenre fetchart embedart edit
+plugins: spotify bandcamp lyrics lastgenre fetchart embedart edit chroma
 
 embedart:
   ifempty: yes
