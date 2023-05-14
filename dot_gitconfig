@@ -4,7 +4,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [user]
-	name = TheGoodDude22
-	email = 61601241+TheGoodDude22@users.noreply.github.com
+	name = ibll
+	email = 61601241+ibll@users.noreply.github.com
 [init]
 	defaultBranch = main
