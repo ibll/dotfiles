@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<brushes />
+<brushes>
+    <brush type="image" imagecolor="false">
+        <image width="2" height="2" format="rgba">/8yq///MqgD/zKoA/8yqAA==</image>
+        <mask width="2" height="2" format="bitmap">AQEBAQ==</mask>
+    </brush>
+    <brush type="image" imagecolor="false">
+        <image width="2" height="2" format="rgba">AAAA/wAAAAAAAAAAAAAA/w==</image>
+        <mask width="2" height="2" format="bitmap">AQEBAQ==</mask>
+    </brush>
+    <brush type="image" imagecolor="false">
+        <image width="2" height="2" format="rgba">/wBNAP8ATf//AE3//wBN/w==</image>
+        <mask width="2" height="2" format="bitmap">AQEBAQ==</mask>
+    </brush>
+</brushes>
