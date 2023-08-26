@@ -1548,13 +1548,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.83375310897827148</real>
+				<real>0.83529411764705885</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.8839111328125</real>
+				<real>0.88235294117647056</real>
 				<key>Red Component</key>
-				<real>0.49444857239723206</real>
+				<real>0.49411764705882355</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -3528,11 +3528,11 @@
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>PasteSpecialRegex</key>
-	<string></string>
+	<string>  </string>
 	<key>PasteSpecialSubstitution</key>
 	<string></string>
 	<key>PasteSpecialUseRegexSubstitution</key>
-	<false/>
+	<true/>
 	<key>PerPaneBackgroundImage</key>
 	<false/>
 	<key>PointerActions</key>

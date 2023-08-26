@@ -35,3 +35,11 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 	git commit -m "Backing up..."
 	git push
 	```
+
+# Special Notes
+
+1. I have the following at the top of my `/private/etc/pam.d/sudo` file.
+  ```
+  auth       sufficient     pam_tid.so
+  ```
+  This opens the TouchID prompt when using `sudo`.

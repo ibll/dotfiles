@@ -9,10 +9,6 @@
 # @raycast.icon /Users/isbell/.dotfiles/System/Raycast/Scripts/Images/discord_logo.png
 # @raycast.packageName Arc Apps
 
-# Documentation:
-# @raycast.author Chloe Isbell
-# @raycast.authorURL https://github.com/TheGoodDude22
-
 tell application "Arc"
 	# Search Arc for open Discord tab
 	set _window_index to 1
