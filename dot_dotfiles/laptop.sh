@@ -9,13 +9,17 @@ brew bundle --file=- <<EOF
 EOF
 
 if [ ! -f "$HOME/.config/chezmoi/chezmoi.toml" ]; then
-  info_echo "Applying dotfiles with chezmoi ..."
-  chezmoi init --apply --verbose https://github.com/TheGoodDude22/dotfiles.git
-  chmod 0600 "$HOME/.config/chezmoi/chezmoi.toml"
+	info_echo "Applying dotfiles with chezmoi ..."
+	chezmoi init --apply --verbose https://github.com/ibll/dotfiles.git
+	chmod 0600 "$HOME/.config/chezmoi/chezmoi.toml"
 fi
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 #        App        #
 #                   #
@@ -28,4 +32,4 @@ defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.dotfiles/Syst
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
 # Install iTerm custom theme
-open "${HOME}/.dotfiles/System/iTerm/Lovelace_Trans.itermcolors"
+open "${HOME}/.dotfiles/System/iTerm/Lovelace_Trans_Dark.itermcolors"
