@@ -10,7 +10,7 @@
 // @raycast.icon /Users/isbell/.dotfiles/System/Raycast/Scripts/Images/dune_ii_logo.png
 // @raycast.packageName Dune II Countdown
 
-const RELEASE_DATE = "2024-03-1"
+const RELEASE_DATE = "2024-02-25"
 
 function toDate(dateStr) {
     const parts = dateStr.split("-").map(x => Number(x))
