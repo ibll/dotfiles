@@ -1,27 +1,16 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.7.7",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
-      "buttons" : {
-        "universalBackForward" : false
-      },
-      "if" : {
-        "device" : {
-          "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "productID" : "0x281",
-          "category" : "trackpad",
-          "vendorID" : "0x5ac"
-        }
-      },
       "pointer" : {
         "acceleration" : 1,
-        "speed" : 0.0689655172413792768,
-        "disableAcceleration" : false
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768
+      },
+      "buttons" : {
+        "universalBackForward" : true
       },
       "scrolling" : {
-        "speed" : {
-          "vertical" : 0
-        },
         "acceleration" : {
           "vertical" : 1
         },
@@ -30,35 +19,52 @@
         },
         "distance" : {
           "vertical" : "auto"
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "productID" : "0x281",
+          "vendorID" : "0x5ac",
+          "category" : "trackpad"
         }
       }
     },
     {
-      "buttons" : {
-        "universalBackForward" : true
-      },
-      "if" : {
-        "device" : {
-          "productName" : "M720 Triathlon",
-          "serialNumber" : "4CC7A0351001BB66",
-          "productID" : "0xb015",
-          "category" : "mouse",
-          "vendorID" : "0x46d"
-        }
-      },
       "scrolling" : {
-        "speed" : {
-          "vertical" : 33.88
+        "distance" : {
+          "vertical" : "auto"
         },
         "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
           "vertical" : 0
         },
         "reverse" : {
           "vertical" : true
-        },
-        "distance" : {
-          "vertical" : "auto"
         }
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "serialNumber" : "4CC7A0351001BB66",
+          "productID" : "0xb015",
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productName" : "M720 Triathlon"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false
       }
     }
   ]

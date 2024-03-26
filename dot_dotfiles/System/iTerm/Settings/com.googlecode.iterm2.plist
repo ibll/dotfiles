@@ -1470,13 +1470,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.74711883068084717</real>
+				<real>0.74901960784313726</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.851104736328125</real>
+				<real>0.85098039215686272</real>
 				<key>Red Component</key>
-				<real>0.069284722208976746</real>
+				<real>0.070588235294117646</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -1522,13 +1522,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.948089599609375</real>
+				<real>0.94901960784313721</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73814165592193604</real>
+				<real>0.73725490196078436</real>
 				<key>Red Component</key>
-				<real>0.18641789257526398</real>
+				<real>0.18823529411764706</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -1548,13 +1548,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.83375310897827148</real>
+				<real>0.83529411764705885</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.8839111328125</real>
+				<real>0.88235294117647056</real>
 				<key>Red Component</key>
-				<real>0.49444857239723206</real>
+				<real>0.49411764705882355</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -1639,11 +1639,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.6369813084602356</real>
+				<real>0.63529413938522339</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.5417633056640625</real>
+				<real>0.54117649793624878</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -1708,7 +1708,7 @@
 				<key>Green Component</key>
 				<real>1</real>
 				<key>Red Component</key>
-				<real>0.99999600648880005</real>
+				<real>1</real>
 			</dict>
 			<key>Brighten Bold Text</key>
 			<false/>
@@ -2835,7 +2835,7 @@
 			<key>HotKey Modifier Activation</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Flags</key>
-			<integer>393216</integer>
+			<integer>1966080</integer>
 			<key>HotKey Window Animates</key>
 			<false/>
 			<key>HotKey Window AutoHides</key>

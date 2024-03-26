@@ -8,3 +8,8 @@
 	email = 61601241+ibll@users.noreply.github.com
 [init]
 	defaultBranch = main
+[core]
+	autocrlf = input
+	editor = nvim
+[alias]
+	first = rev-list --max-parents=0 HEAD
