@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <brushes>
     <brush type="image" imagecolor="false">
-        <image width="2" height="2" format="rgba">/8yq///MqgD/zKoA/8yqAA==</image>
+        <image width="2" height="2" format="rgba">/8yq///MqgD/zKoA/8yqA===</image>
         <mask width="2" height="2" format="bitmap">AQEBAQ==</mask>
     </brush>
     <brush type="image" imagecolor="false">
@@ -11,5 +11,11 @@
     <brush type="image" imagecolor="false">
         <image width="2" height="2" format="rgba">/wBNAP8ATf//AE3//wBN/w==</image>
         <mask width="2" height="2" format="bitmap">AQEBAQ==</mask>
+    </brush>
+    <brush type="circle" size="48" angle="0">
+        <fgcolor value="index{15}"/>
+        <inktype value="simple"/>
+        <inkopacity value="255"/>
+        <shade value=""/>
     </brush>
 </brushes>

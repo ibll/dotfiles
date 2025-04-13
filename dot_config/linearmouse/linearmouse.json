@@ -1,24 +1,23 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
       "pointer" : {
-        "acceleration" : 1,
+        "speed" : 0.0689655172413792768,
         "disableAcceleration" : false,
-        "speed" : 0.0689655172413792768
+        "acceleration" : 1
       },
       "buttons" : {
         "universalBackForward" : true
       },
       "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        },
         "reverse" : {
           "vertical" : false
         },
         "distance" : {
           "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
         },
         "speed" : {
           "vertical" : 0
@@ -26,28 +25,14 @@
       },
       "if" : {
         "device" : {
+          "category" : "trackpad",
           "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "productID" : "0x281",
           "vendorID" : "0x5ac",
-          "category" : "trackpad"
+          "productID" : "0x281"
         }
       }
     },
     {
-      "scrolling" : {
-        "distance" : {
-          "vertical" : "auto"
-        },
-        "acceleration" : {
-          "vertical" : 1
-        },
-        "speed" : {
-          "vertical" : 0
-        },
-        "reverse" : {
-          "vertical" : true
-        }
-      },
       "buttons" : {
         "mappings" : [
 
@@ -56,16 +41,35 @@
       },
       "if" : {
         "device" : {
+          "productName" : "M720 Triathlon",
           "serialNumber" : "4CC7A0351001BB66",
-          "productID" : "0xb015",
           "category" : "mouse",
           "vendorID" : "0x46d",
-          "productName" : "M720 Triathlon"
+          "productID" : "0xb015"
         }
       },
       "pointer" : {
-        "disableAcceleration" : false
+        "speed" : 0.336,
+        "disableAcceleration" : false,
+        "acceleration" : 0
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true,
+          "horizontal" : false
+        },
+        "acceleration" : {
+          "vertical" : 0.49
+        },
+        "speed" : {
+          "horizontal" : 46.4,
+          "vertical" : 10
+        },
+        "distance" : {
+          "vertical" : "auto"
+        }
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
 }

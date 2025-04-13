@@ -6,6 +6,7 @@
 [user]
 	name = ibll
 	email = 61601241+ibll@users.noreply.github.com
+	signingkey = 8B70BA919B6AA9BE
 [init]
 	defaultBranch = main
 [core]
@@ -13,3 +14,5 @@
 	editor = nvim
 [alias]
 	first = rev-list --max-parents=0 HEAD
+[commit]
+	gpgsign = true
