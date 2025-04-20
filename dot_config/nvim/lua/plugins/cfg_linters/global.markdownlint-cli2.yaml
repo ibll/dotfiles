@@ -1,0 +1,12 @@
+config:
+  MD009: false # spaces after line (common in blockquotes)
+  MD010: false # no hard tabs
+  MD012: false # consecutive blank lines
+  MD013: false # line length
+  MD022: false # blanks around headers
+  MD025: false # multiple h1
+  MD028: false # lines between blockquotes?
+  MD032: false # blanks around lists
+  MD033: false # no inline html
+  MD041: false # first line should be h1
+  MD047: false # file should end in newline
