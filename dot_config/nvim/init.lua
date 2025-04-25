@@ -1,7 +1,4 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+require("config.lazy") -- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.neovide") -- neovide gui settings
 
-vim.opt.scrolloff = 6
-
-vim.cmd.colorscheme("rose-pine")
--- vim.cmd.colorscheme("catppuccin")
+vim.cmd("colorscheme rose-pine")

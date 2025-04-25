@@ -8,5 +8,6 @@ config:
   MD028: false # lines between blockquotes?
   MD032: false # blanks around lists
   MD033: false # no inline html
+  MD037: false # It was yelling at me for having "> _" with a space. Not even at the start of a line or anything.
   MD041: false # first line should be h1
   MD047: false # file should end in newline
