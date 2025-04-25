@@ -12,6 +12,7 @@
 [core]
 	autocrlf = input
 	editor = nvim
+	excludesFile = ~/.gitignore
 [alias]
 	first = rev-list --max-parents=0 HEAD
 [commit]
