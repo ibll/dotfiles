@@ -9,7 +9,7 @@ vim.keymap.set("n", "L", "$", { noremap = true, silent = true, desc = "Go to End
 -- Comment and duplicate. Count is for how many lines to copy
 vim.keymap.set("n", "gcd", function()
   return "yy" .. vim.v.count1 .. "gcc']p"
-end, { remap = true, expr = true })
+end, { remap = true, expr = true, desc = "Comment and Duplicate" })
 
 -- Search only within visual selection
 vim.keymap.set("x", "/", "<Esc>/\\%V", { desc = "Search in Selection" })
