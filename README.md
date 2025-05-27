@@ -67,6 +67,3 @@ username = USERNAME
 password = PASSWORD
 journal = ~/.config/mpdscribble/journal.txt
 ```
-
-```
-```
