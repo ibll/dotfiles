@@ -1,0 +1,186 @@
+#![enable(implicit_some)]
+#![enable(unwrap_newtypes)]
+#![enable(unwrap_variant_newtypes)]
+(
+    default_album_art_path: None,
+    show_song_table_header: false,
+    draw_borders: false,
+    browser_column_widths: [20, 38, 42],
+    text_color: None,
+    tab_bar: (
+        enabled: true,
+        active_style: (fg: "black", bg: "green", modifiers: "Bold"),
+        inactive_style: ()
+    ),
+    highlighted_item_style: (fg: "cyan", modifiers: "Bold"),
+    current_item_style: (fg: "black", bg: "cyan", modifiers: "Bold"),
+    highlight_border_style: (fg: "black"),
+    borders_style: (fg: "dark_gray"),
+    symbols: (song: "󰝚 ", dir: " ", marker: "* ", ellipsis: "..."),
+    background_color: None,
+    header_background_color: None,
+    modal_background_color: None,
+    modal_backdrop: false,
+    progress_bar: (
+        symbols: ["", "⭘", " "],
+        track_style: (bg: None),
+        elapsed_style: (fg: "green", bg: None),
+        thumb_style: (fg: "cyan", bg: None),
+    ),
+    scrollbar: (
+        symbols: ["│", "█", "▲", "▼"],
+        track_style: (),
+        ends_style: (),
+        thumb_style: (fg: "green"),
+    ),
+    song_table_format: [
+        (
+            prop: (kind: Property(Title), style: (fg: "white"),
+                highlighted_item_style: (fg: "cyan", modifiers: "Bold"),
+                default: (kind: Property(Filename), style: (fg: "gray"),)
+            ),
+            width: "60%",
+        ),
+        (
+            prop: (kind: Property(Artist), style: (fg: "white"),
+                default: (kind: Text("Unknown Artist"), style: (fg: "red"))
+            ),
+            width: "40%",
+        ),
+        // (
+        //     prop: (kind: Property(Other("date")), style: (fg: "white"),
+        //         default: (kind: Text(""))
+        //     ),
+        //     width: "10%",
+        // ),
+    ],
+    layout: Split(
+        direction: Vertical,
+        panes: [
+            (
+                size: "1",
+                pane: Pane(Tabs),
+            ),
+            (
+                size: "4",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (
+                            size: "100%",
+                            pane: Split(
+                                direction: Vertical,
+                                panes: [
+                                    (
+                                        size: "4",
+                                        borders: "ALL",
+                                        pane: Pane(Header),
+                                    ),
+                                ]
+                            )
+                        ),
+                    ]
+                ),
+            ),
+            (
+                size: "100%",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (
+                            size: "100%",
+                            borders: "NONE",
+                            pane: Pane(TabContent),
+                        ),
+                    ]
+                ),
+            ),
+            (
+              size: "3",
+              pane: Split(
+                borders: "TOP | BOTTOM",
+                direction: Horizontal,
+                panes: [
+                            (
+                                size: "12",
+                                pane: Pane(Property(
+                                  content: [
+                                    (kind: Text("  ")),
+                                    (kind: Property(Status(StateV2()))),
+                                  ],
+                                  align: Left
+                                )),
+                            ),
+                            (
+                                size: "100%",
+                                pane: Pane(ProgressBar),
+                            ),
+                            (
+                                size: "15",
+                                pane: Pane(Property(
+                                    content: [
+                                        (kind: Property(Status(Elapsed))),
+                                        (kind: Text(" / ")),
+                                        (kind: Property(Status(Duration))),
+                                        (kind: Text("  ")),
+                                    ], align: Right,
+                                )),
+                            ),
+                        ]
+              ),
+            ),
+        ],
+    ),
+    header: (
+        rows: [
+            (
+                left: [],
+                center: [
+                    (kind: Property(Song(Title)), style: (fg: "white",modifiers: "Bold"),
+                        default: (kind: Property(Song(Filename)), style: (fg: "white",modifiers: "Bold"))
+                    )
+                ],
+                right: []
+            ),
+            (
+                left: [
+                    (kind: Property(Widget(Volume)), style: (fg: "white", modifiers: "Bold")),
+                ],
+                center: [
+                    (kind: Property(Song(Artist)), style: (fg: "white", modifiers: "Bold"),
+                        default: (kind: Text("Unknown Artist"), style: (fg: "white", modifiers: "Bold"))
+                    ),
+                    (kind: Text(" - "),style: (fg: "white")),
+                    (kind: Property(Song(Album)), style: (fg: "white", modifiers: "Bold"),
+                        default: (kind: Text("Unknown Album"), style: (fg: "white", modifiers: "Bold"))
+                    ),
+                ],
+                right: [
+                    (kind: Property(Status(RepeatV2(on_label: " ", off_label: " ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"))))),
+                    (kind: Text(" / "),style: (fg: "white")),
+                    (kind: Property(Status(RandomV2(on_label: " ", off_label: " ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"))))),
+                    (kind: Text(" / "),style: (fg: "white")),
+                    (kind: Property(Status(ConsumeV2(on_label: " ", off_label: " ", oneshot_label: " ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"), oneshot_style: (fg: "red"))))),
+                    (kind: Text(" / "),style: (fg: "white")),
+                    (kind: Property(Status(SingleV2(on_label: "󰎇 ", off_label: "󰎇 ", oneshot_label: "󰎇 ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"), oneshot_style: (fg: "red"))))),
+                ]
+            ),
+        ],
+    ),
+    browser_song_format: [
+        (
+            kind: Group([
+                (kind: Property(Track)),
+                (kind: Text(" ")),
+            ])
+        ),
+        (
+            kind: Group([
+                (kind: Property(Artist)),
+                (kind: Text(" - ")),
+                (kind: Property(Title)),
+            ]),
+            default: (kind: Property(Filename))
+        ),
+    ],
+)

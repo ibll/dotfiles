@@ -49,3 +49,14 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.fn.setreg("l", vim.api.nvim_replace_termcodes("yoprint('<Esc>pa:', <Esc>p1)<Esc>1", true, true, true))
   end,
 })
+
+---------------
+-- Filetypes --
+---------------
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "ron",
+  callback = function()
+    vim.o.commentstring = "// %s" -- Change this to your desired comment string
+  end,
+})

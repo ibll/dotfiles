@@ -2,6 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+local allModes = { "n", "v", "s", "o", "i", "c", "x" }
+
 -- Easy $ and ^
 vim.keymap.set("n", "H", "^", { noremap = true, silent = true, desc = "Go to Start" })
 vim.keymap.set("n", "L", "$", { noremap = true, silent = true, desc = "Go to End" })
@@ -20,8 +22,8 @@ vim.keymap.set("i", ";;", "<ESC>A;")
 vim.keymap.set("i", ",,", "<ESC>A,")
 
 -- Tab does indent
-vim.keymap.set("i", "<Tab>", "<C-o>>><C-o>A")
-vim.keymap.set("i", "<S-Tab>", "<C-o><<<C-o>A")
+-- vim.keymap.set("i", "<Tab>", "<C-o>>><C-o>A")
+-- vim.keymap.set("i", "<S-Tab>", "<C-o><<<C-o>A")
 
 -- Block insert in line visual mode
 vim.keymap.set("x", "I", function()

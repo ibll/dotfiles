@@ -2,3 +2,5 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 
 vim.o.scrolloff = 6 -- Always show at least 6 lines above cursor
+vim.opt.matchpairs:append({ "“:”" })
+vim.g.snacks_animate = false

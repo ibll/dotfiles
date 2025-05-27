@@ -4,6 +4,7 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 
 1. [Download `laptop.sh`](dot_dotfiles/laptop.sh)
 2. Run laptop.sh:
+
  ```
  sh /path/to/laptop.sh
  ```
@@ -13,23 +14,29 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 # Backup Steps
 
 1. Backup External Data
- - Brewfile dump - Keeps [`brew`](https://brew.sh) files up to date
+
+- Brewfile dump - Keeps [`brew`](https://brew.sh) files up to date
+
   ```
   brew bundle dump --force
   ```
 
-  - Raycast Export - Keeps [Raycast](https://www.raycast.com/) configuration current
+- Raycast Export - Keeps [Raycast](https://www.raycast.com/) configuration current
+
   1. Open Raycast
   2. Export Settings & Data
-   - Password in Bitwarden
-   - Located in `~/.dotfiles/System/Raycast/Backups/`
- 
+
+- Password in Bitwarden
+- Located in `~/.dotfiles/System/Raycast/Backups/`
+
 2. Sync modified files to Chezmoi
+
  ```
  chezmoi re-add
  ```
 
 3. Sync changes to Github
+
  ```
  chezmoi cd
  git add .
@@ -39,10 +46,27 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 
 # Special Notes
 
-1. I have the following at the top of my `/private/etc/pam.d/sudo` file.
+## TouchID Sudo
 
-  ```
-  auth       sufficient     pam_tid.so
-  ```
+I have the following at the top of my `/private/etc/pam.d/sudo` file.
 
-  This opens the TouchID prompt when using `sudo`.
+```plaintext
+auth       sufficient     pam_tid.so
+```
+
+## Music Setup
+
+I have [MPD](https://mpd.readthedocs.io/en/latest/user.html) set up. [RMPC](https://mierak.github.io/rmpc/) is my music client, and [MPDScribble](https://www.musicpd.org/clients/mpdscribble/) scrobbles my tracks.
+
+```bash
+# ~/.config/mpdscribble/mpdscribble.conf
+
+[lastfm]
+url = https://post.audioscrobbler.com/
+username = USERNAME
+password = PASSWORD
+journal = ~/.config/mpdscribble/journal.txt
+```
+
+```
+```

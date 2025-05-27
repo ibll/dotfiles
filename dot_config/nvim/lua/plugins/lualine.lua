@@ -123,12 +123,12 @@ return {
               end
             end,
           },
-          {
-            "lsp_status",
-            on_click = function()
-              Snacks.picker.lsp_config()
-            end,
-          },
+          -- {
+          --   "lsp_status",
+          --   on_click = function()
+          --     Snacks.picker.lsp_config()
+          --   end,
+          -- },
           {
             "searchcount",
           },
