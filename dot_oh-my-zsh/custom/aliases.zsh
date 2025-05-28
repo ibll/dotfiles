@@ -20,9 +20,10 @@ alias disc="ncdu /"
 alias map="ncdu"
 
 # Music Downloading
-alias b="beet im -C -w"
+alias am="gamdl"
 alias yta="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output \"~/Downloads/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
 alias ytb="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output \"~/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
+alias b="beet im -C -w"
 alias music="rmpc"
 alias mu="rmpc"
 

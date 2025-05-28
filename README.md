@@ -5,7 +5,7 @@ Dotfiles managed with [`chezmoi`](https://github.com/twpayne/chezmoi)
 1. [Download `laptop.sh`](dot_dotfiles/laptop.sh)
 2. Run laptop.sh:
 
- ```
+ ```plaintext
  sh /path/to/laptop.sh
  ```
 
@@ -56,7 +56,7 @@ auth       sufficient     pam_tid.so
 
 ## Music Setup
 
-I have [MPD](https://mpd.readthedocs.io/en/latest/user.html) set up. [RMPC](https://mierak.github.io/rmpc/) is my music client, and [MPDScribble](https://www.musicpd.org/clients/mpdscribble/) scrobbles my tracks.
+I have [MPD](https://mpd.readthedocs.io/en/latest/user.html) set up. [RMPC](https://mierak.github.io/rmpc/) is my music client, and [MPDScribble](https://www.musicpd.org/clients/mpdscribble/) scrobbles to last.fm.
 
 ```bash
 # ~/.config/mpdscribble/mpdscribble.conf
