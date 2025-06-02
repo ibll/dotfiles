@@ -63,24 +63,8 @@
             ),
             (
                 size: "4",
-                pane: Split(
-                    direction: Horizontal,
-                    panes: [
-                        (
-                            size: "100%",
-                            pane: Split(
-                                direction: Vertical,
-                                panes: [
-                                    (
-                                        size: "4",
-                                        borders: "ALL",
-                                        pane: Pane(Header),
-                                    ),
-                                ]
-                            )
-                        ),
-                    ]
-                ),
+                borders: "BOTTOM | TOP",
+                pane: Pane(Header),
             ),
             (
                 size: "100%",
@@ -136,21 +120,24 @@
             (
                 left: [],
                 center: [
-                    (kind: Property(Song(Title)), style: (fg: "white",modifiers: "Bold"),
-                        default: (kind: Property(Song(Filename)), style: (fg: "white",modifiers: "Bold"))
+                    (kind: Property(Song(Title)), style: (fg: "yellow",modifiers: "Italic | Bold"),
+                        default: (kind: Property(Song(Filename)), style: (fg: "yellow",modifiers: "Italic | Bold"),
+                            default: (kind: Text("Unknown Title"), style: (fg: "yellow", modifiers: "Italic | Bold"))
+                        )
                     )
                 ],
                 right: []
             ),
             (
                 left: [
+                    (kind: Text("  ")),
                     (kind: Property(Widget(Volume)), style: (fg: "white", modifiers: "Bold")),
                 ],
                 center: [
                     (kind: Property(Song(Artist)), style: (fg: "white", modifiers: "Bold"),
                         default: (kind: Text("Unknown Artist"), style: (fg: "white", modifiers: "Bold"))
                     ),
-                    (kind: Text(" - "),style: (fg: "white")),
+                    (kind: Text(" - ")),
                     (kind: Property(Song(Album)), style: (fg: "white", modifiers: "Bold"),
                         default: (kind: Text("Unknown Album"), style: (fg: "white", modifiers: "Bold"))
                     ),
@@ -163,6 +150,7 @@
                     (kind: Property(Status(ConsumeV2(on_label: " ", off_label: " ", oneshot_label: " ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"), oneshot_style: (fg: "red"))))),
                     (kind: Text(" / "),style: (fg: "white")),
                     (kind: Property(Status(SingleV2(on_label: "󰎇 ", off_label: "󰎇 ", oneshot_label: "󰎇 ", on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "white"), oneshot_style: (fg: "red"))))),
+                    (kind: Text(" ")),
                 ]
             ),
         ],

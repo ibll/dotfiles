@@ -18,6 +18,16 @@ alias ls="lsd"
 alias neofetch="neowofetch"
 alias disc="ncdu /"
 alias map="ncdu"
+alias lg="lazygit"
+
+# Kitty
+alias s="kitten ssh"
+function upload(){
+    kitten transfer --direction=upload "$@" ./
+}
+function download(){
+    kitten transfer --direction=download "$@" ./
+}
 
 # Music Downloading
 alias am="gamdl"
