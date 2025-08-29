@@ -60,3 +60,20 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.o.commentstring = "// %s" -- Change this to your desired comment string
   end,
 })
+
+vim.api.nvim_create_autocmd("Filetype", {
+  pattern = "markdown",
+  callback = function()
+    vim.b.completion = false
+  end,
+})
+
+vim.api.nvim_create_autocmd("Filetype", {
+  pattern = "javascript",
+  callback = function()
+    vim.opt.tabstop = 4 -- Number of spaces a <Tab> counts for
+    vim.opt.shiftwidth = 4 -- Number of spaces to use for each step of (auto)indent
+    vim.opt.expandtab = true -- Use spaces instead of tabs
+    vim.opt.smartindent = true -- Enable smart indentation
+  end,
+})

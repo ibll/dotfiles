@@ -51,7 +51,12 @@ return {
       min_chars = 2,
     },
 
-    open_app_foreground = true,
+    open = {
+      func = function(uri)
+        vim.ui.open(uri, { cmd = { "open", "-a", "/Applications/Obsidian.app" } })
+      end,
+    },
+
     disable_frontmatter = true,
   },
 }
