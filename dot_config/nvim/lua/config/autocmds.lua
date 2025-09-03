@@ -77,3 +77,17 @@ vim.api.nvim_create_autocmd("Filetype", {
     vim.opt.smartindent = true -- Enable smart indentation
   end,
 })
+
+listening_to_godot = false
+vim.api.nvim_create_autocmd("Filetype", {
+  pattern = "gdscript",
+  callback = function()
+    if listening_to_godot then
+      return
+    end
+
+    local pipe = "/tmp/godot.pipe" -- I use /tmp/godot.pipe
+    vim.api.nvim_command('echo serverstart("' .. pipe .. '")')
+    listening_to_godot = true
+  end,
+})

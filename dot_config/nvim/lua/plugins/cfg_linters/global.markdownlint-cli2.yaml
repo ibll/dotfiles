@@ -1,4 +1,5 @@
 config:
+  MD007: false # unordered list indentation
   MD009: false # spaces after line (common in blockquotes)
   MD010: false # no hard tabs
   MD012: false # consecutive blank lines
