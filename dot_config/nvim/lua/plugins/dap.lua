@@ -2,6 +2,7 @@ return {
   "mfussenegger/nvim-dap",
   dependencies = {
     "rcarriga/nvim-dap-ui",
+    "theHamsta/nvim-dap-virtual-text",
   },
   config = function()
     -- load mason-nvim-dap here, after all adapters have been setup
@@ -25,6 +26,11 @@ return {
     vscode.json_decode = function(str)
       return vim.json.decode(json.json_strip_comments(str))
     end
+
+    -- Show stop reason
+    require("nvim-dap-virtual-text").setup({
+      show_stop_reason = true,
+    })
 
     -- Prevent DAP UI from hiding when finished
     local dap = require("dap")
