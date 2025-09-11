@@ -137,7 +137,7 @@ source = /tmp/mpd.fifo
 # 'sdl' uses the Simple DirectMedia Layer to render in a graphical context.
 # 'sdl_glsl' uses SDL to create an OpenGL context. Write your own shaders or
 # use one of the predefined ones.
-; method = noncurses
+; method = ncruses
 
 # Orientation of the visualization. Can be 'bottom', 'top', 'left', 'right' or
 # 'horizontal'. Default is 'bottom'. 'left and 'right' are only supported on sdl

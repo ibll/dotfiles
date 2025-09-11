@@ -7,7 +7,7 @@ alias clearh="printf '\033[2J\033[3J\033[1;1H'"
 
 # Dev
 alias docker="/Applications/Docker.app/Contents/Resources/bin/docker"
-alias pi="open /Applications/Picotron.app/Contents/MacOS/picotron"
+alias pt="/Applications/Picotron.app/Contents/MacOS/picotron"
 alias python="/usr/bin/python3"
 
 # Utilities
@@ -19,6 +19,7 @@ alias neofetch="neowofetch"
 alias disc="ncdu /"
 alias map="ncdu"
 alias lg="lazygit"
+alias send="scp"
 
 # Kitty
 alias s="kitten ssh"

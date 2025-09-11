@@ -1,52 +1,61 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
   "schemes" : [
     {
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : true
+      },
       "if" : {
         "device" : {
+          "category" : "trackpad",
           "productID" : "0x281",
           "productName" : "Apple Internal Keyboard \/ Trackpad",
-          "vendorID" : "0x5ac",
-          "category" : "trackpad"
+          "vendorID" : "0x5ac"
         }
       },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768
+      },
       "scrolling" : {
-        "reverse" : {
-          "vertical" : false
-        },
         "acceleration" : {
           "vertical" : 1
         },
         "distance" : {
           "vertical" : "auto"
         },
-        "speed" : {
-          "vertical" : 0
-        }
-      },
-      "buttons" : {
-        "universalBackForward" : true
-      },
-      "pointer" : {
-        "acceleration" : 1,
-        "disableAcceleration" : false,
-        "speed" : 0.0689655172413792768
+        "reverse" : {
+          "vertical" : false
+        },
+        "speed" : 0
       }
     },
     {
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : false
+      },
       "if" : {
         "device" : {
-          "vendorID" : "0x46d",
-          "serialNumber" : "4CC7A0351001BB66",
-          "productName" : "M720 Triathlon",
           "category" : "mouse",
-          "productID" : "0xb015"
+          "productID" : "0xb015",
+          "productName" : "M720 Triathlon",
+          "serialNumber" : "4CC7A0351001BB66",
+          "vendorID" : "0x46d"
         }
       },
+      "pointer" : {
+        "acceleration" : 0,
+        "disableAcceleration" : false,
+        "speed" : 0.336
+      },
       "scrolling" : {
-        "speed" : {
-          "horizontal" : 46.4,
-          "vertical" : 12.54
-        },
         "acceleration" : {
           "vertical" : 1
         },
@@ -56,20 +65,73 @@
         "reverse" : {
           "horizontal" : false,
           "vertical" : true
+        },
+        "speed" : {
+          "horizontal" : 46.4,
+          "vertical" : 12.54
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "action" : "mouse.button.back",
+            "button" : 3,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          },
+          {
+            "action" : "mouse.button.forward",
+            "button" : 4,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        ],
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb034",
+          "productName" : "MX Master 3S",
+          "serialNumber" : "7D613C84",
+          "vendorID" : "0x46d"
         }
       },
-      "buttons" : {
-        "universalBackForward" : false,
-        "mappings" : [
-
-        ]
-      },
       "pointer" : {
-        "disableAcceleration" : false,
-        "speed" : 0.336,
-        "acceleration" : 0
+        "acceleration" : 0.85,
+        "disableAcceleration" : true,
+        "speed" : 0.0689655172413792768
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 0,
+          "vertical" : 0.17
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "auto"
+            }
+          }
+        },
+        "reverse" : {
+          "horizontal" : false,
+          "vertical" : true
+        },
+        "speed" : {
+          "horizontal" : 30,
+          "vertical" : 13.12
+        }
       }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }
