@@ -77,3 +77,10 @@ vim.api.nvim_create_autocmd("Filetype", {
     vim.opt.smartindent = true -- Enable smart indentation
   end,
 })
+
+vim.api.nvim_create_autocmd("Filetype", {
+  pattern = "gdscript",
+  callback = function()
+    vim.opt.colorcolumn = "100"
+  end,
+})
