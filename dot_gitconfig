@@ -6,7 +6,7 @@
 [user]
 	name = ibll
 	email = 61601241+ibll@users.noreply.github.com
-	signingkey = 8B70BA919B6AA9BE
+	signingkey = 763987DA56EAAF77
 [init]
 	defaultBranch = main
 [core]
