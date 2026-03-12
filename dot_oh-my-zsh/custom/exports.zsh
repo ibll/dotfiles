@@ -9,3 +9,5 @@ export PATH=/Users/isbell/bin:$PATH
 export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
 export PATH="$PATH:/Users/isbell/.local/bin"
 
+# Bitwarden SSH
+export SSH_AUTH_SOCK=/Users/isbell/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
