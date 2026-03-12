@@ -84,3 +84,51 @@ vim.api.nvim_create_autocmd("Filetype", {
     vim.opt.colorcolumn = "100"
   end,
 })
+
+-- Reuse or open a terminal in a vertical split (Neovim Lua)
+local function open_or_reuse_terminal_vertical(cmd, name)
+  -- Search for an existing terminal buffer with b:term_name == name
+  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.api.nvim_buf_is_loaded(buf) and vim.api.nvim_buf_get_option(buf, "buftype") == "terminal" then
+      local ok, val = pcall(vim.api.nvim_buf_get_var, buf, "term_name")
+      if ok and val == name then
+        -- If it's visible in another window, jump there; otherwise switch buffer in current window
+        for _, win in ipairs(vim.api.nvim_list_wins()) do
+          if vim.api.nvim_win_get_buf(win) == buf then
+            vim.api.nvim_set_current_win(win)
+            vim.cmd("startinsert")
+            return
+          end
+        end
+        -- Not visible: open in a vertical split and set that buffer
+        vim.cmd("vsplit")
+        vim.api.nvim_win_set_buf(0, buf)
+        vim.cmd("startinsert")
+        return
+      end
+    end
+  end
+
+  -- None found: create new terminal in a vertical split
+  vim.cmd("split")
+  -- vim.cmd("vertical resize 60") -- adjust width as you like; comment out to keep default
+  -- Use termopen so we get a buffer we can name
+  local term_buf = vim.api.nvim_create_buf(false, true) -- not listed, scratch
+  vim.api.nvim_set_current_buf(term_buf)
+  vim.fn.termopen(cmd)
+  vim.api.nvim_buf_set_var(term_buf, "term_name", name)
+  vim.cmd("startinsert")
+end
+
+vim.api.nvim_create_autocmd("Filetype", {
+  pattern = "sage",
+  callback = function()
+    vim.keymap.set("n", "<localleader>r", function()
+      open_or_reuse_terminal_vertical(
+        "sage " .. vim.fn.expand("%") .. "; rm " .. vim.fn.expand("%") .. ".py",
+        "Sage Runner"
+      )
+    end, { noremap = true, silent = true, desc = "Run in Terminal" })
+    vim.bo.commentstring = "# %s"
+  end,
+})

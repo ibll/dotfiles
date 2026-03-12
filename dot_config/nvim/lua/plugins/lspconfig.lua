@@ -1,5 +1,16 @@
 return {
   "neovim/nvim-lspconfig",
+  config = function(_, opts)
+    opts.servers = vim.tbl_deep_extend("force", opts.servers, {
+      ltex = {
+        settings = {
+          ltex = {
+            checkFrequency = "save",
+          },
+        },
+      },
+    })
+  end,
   opts = {
     servers = {
       gdscript = {},
@@ -25,6 +36,7 @@ return {
             vim.fn.serverstart("/tmp/godot.pipe")
           end,
         })
+
         return true
       end,
     },
