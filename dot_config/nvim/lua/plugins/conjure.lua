@@ -1,4 +1,5 @@
-return {
-  { "Olical/conjure" },
-  { "wlangstroth/vim-racket" },
-}
+return {}
+-- return {
+--   { "Olical/conjure" },
+--   { "wlangstroth/vim-racket" },
+-- }

@@ -1,7 +1,9 @@
 return {
   "neovim/nvim-lspconfig",
-  config = function(_, opts)
-    opts.servers = vim.tbl_deep_extend("force", opts.servers, {
+  opts = {
+    servers = {
+      gdscript = {},
+      -- ts_ls = {},
       ltex = {
         settings = {
           ltex = {
@@ -9,11 +11,6 @@ return {
           },
         },
       },
-    })
-  end,
-  opts = {
-    servers = {
-      gdscript = {},
     },
     setup = {
 
