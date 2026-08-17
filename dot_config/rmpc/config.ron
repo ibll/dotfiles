@@ -32,10 +32,8 @@
       "<Tab>":   NextTab,
       "<S-Tab>": PreviousTab,
       "1":       SwitchToTab("Playing"),
-      "2":       SwitchToTab("Find"),
-      "3":       SwitchToTab("Dir"),
-      "4":       SwitchToTab("Albums"),
-      "5":       SwitchToTab("Lists"),
+      "2":       SwitchToTab("Search"),
+      "3":       SwitchToTab("All"),
       "q":       Quit,
       ">":       NextTrack,
       "p":       TogglePause,
@@ -129,20 +127,12 @@
       ),
     ),
     (
-      name: "Find",
+      name: "Search",
       pane: Pane(Search),
     ),
     (
-      name: "Dir",
+      name: "All",
       pane: Pane(Directories),
-    ),
-    (
-      name: "Albums",
-      pane: Pane(Albums),
-    ),
-    (
-      name: "Lists",
-      pane: Pane(Playlists),
-    ),
+    )
   ],
 )

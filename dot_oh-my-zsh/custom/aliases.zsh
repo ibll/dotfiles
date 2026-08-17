@@ -24,9 +24,9 @@ alias send="scp"
 alias s="kitten ssh"
 
 # Music Downloading
-alias am="gamdl --cookies-path='/Users/isbell/.config/gamdl/cookies.txt' --output-path '/Users/isbell/Music/Music/Media.localized/Music' --no-synced-lyrics"
-alias yta="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output \"~/Downloads/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
-alias ytb="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output \"~/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
+alias am="gamdl"
+alias yta="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --cookies-from-browser safari --output \"~/Downloads/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
+alias ytb="yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --cookies-from-browser safari --output \"~/%(playlist)s/%(title)s.%(ext)s\" --yes-playlist --embed-metadata"
 alias b="beet im -C -w"
 alias music="rmpc"
 alias mu="rmpc"
