@@ -6,7 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon /Users/isbell/.dotfiles/System/Raycast/Scripts/Images/discord_logo.png
+# @raycast.icon ./Images/discord_logo.png
 # @raycast.packageName Arc Apps
 
 tell application "Arc"
