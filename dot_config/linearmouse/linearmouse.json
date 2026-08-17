@@ -1,5 +1,5 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.2",
   "schemes" : [
     {
       "buttons" : {
@@ -74,23 +74,34 @@
     },
     {
       "buttons" : {
-        "mappings" : [
-          {
-            "action" : "mouse.button.back",
-            "button" : 3,
-            "command" : false,
-            "control" : false,
-            "option" : false,
-            "shift" : false
+        "autoScroll" : {
+          "enabled" : true,
+          "mode" : "toggle",
+          "preserveNativeMiddleClick" : true,
+          "speed" : 1,
+          "trigger" : {
+            "button" : 2
+          }
+        },
+        "gesture" : {
+          "actions" : {
+            "down" : "showDesktop",
+            "left" : "missionControl.spaceLeft",
+            "right" : "missionControl.spaceRight",
+            "up" : "missionControl"
           },
-          {
-            "action" : "mouse.button.forward",
-            "button" : 4,
+          "enabled" : true,
+          "threshold" : 20,
+          "trigger" : {
+            "button" : 5,
             "command" : false,
             "control" : false,
             "option" : false,
             "shift" : false
           }
+        },
+        "mappings" : [
+
         ],
         "universalBackForward" : false
       },
@@ -131,6 +142,82 @@
           "horizontal" : 30,
           "vertical" : 13.12
         }
+      }
+    },
+    {
+      "buttons" : {
+        "autoScroll" : {
+          "enabled" : false,
+          "mode" : "toggle",
+          "preserveNativeMiddleClick" : true,
+          "speed" : 1,
+          "trigger" : {
+            "button" : 2,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        },
+        "gesture" : {
+          "actions" : {
+            "down" : "showDesktop",
+            "left" : "missionControl.spaceLeft",
+            "right" : "missionControl.spaceRight",
+            "up" : "missionControl"
+          },
+          "enabled" : true,
+          "threshold" : 50,
+          "trigger" : {
+            "button" : 5,
+            "command" : false,
+            "control" : false,
+            "option" : false,
+            "shift" : false
+          }
+        },
+        "mappings" : [
+
+        ]
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xc548",
+          "productName" : "USB Receiver",
+          "vendorID" : "0x46d"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 0.17
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 13.12
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x1304",
+          "productName" : "Steam Controller Puck",
+          "serialNumber" : "FXB9960201AB9",
+          "vendorID" : "0x28de"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : false,
+        "redirectsToScroll" : false
       }
     }
   ]
