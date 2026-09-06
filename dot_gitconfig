@@ -19,3 +19,5 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+[includeIf "gitdir:~/GitLab/"]
+  path = ~/.gitconfig-gitlab
