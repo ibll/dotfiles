@@ -7,7 +7,13 @@ return {
       ltex = {
         settings = {
           ltex = {
+            language = "en-UK",
             checkFrequency = "save",
+            disabledRules = {
+              ["en-US"] = {
+                "MORFOLOGIK_RULE_EN_US",
+              },
+            },
           },
         },
       },
