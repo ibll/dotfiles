@@ -1,5 +1,5 @@
 tap "b3z/small", trusted: true
-tap "darrylmorley/whatcable"
+tap "darrylmorley/whatcable", trusted: true
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -91,6 +91,8 @@ brew "ghostscript"
 brew "git"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
+# Open-source GitLab command-line tool
+brew "glab"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Generate introspection data for GObject libraries
@@ -193,12 +195,16 @@ brew "testdisk"
 brew "thefuck"
 # Terminal image and video viewer
 brew "timg"
+# Terminal multiplexer
+brew "tmux"
 # Mastodon CLI & TUI
 brew "toot"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Terminal UI OS (Terminal Multiplexer)
+brew "tuios"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
 # Pager/text based browser
@@ -215,22 +221,20 @@ brew "yt-dlp"
 brew "zsh"
 # Ookla Speedtest
 brew "teamookla/speedtest/speedtest"
-# Show MS Windows style activation dialog on my screen.
-cask "b3z/small/activate"
 # Chromium based browser
 cask "arc"
-# Multi-track audio editor and recorder
-cask "audacity"
 # Desktop password and login vault
 cask "bitwarden"
 # 3D model editor for boxy models and pixel art textures
 cask "blockbench"
 # Screen capturing tool
 cask "cleanshot"
+# C and C++ IDE
+cask "clion"
+# Guitar Hero clone
+cask "clone-hero"
 # Use and switch graphics packs with Dwarf Fortress without corrupting your game
 cask "dwarf-fortress-lmp"
-# Collaborative team software
-cask "figma"
 cask "font-hack-nerd-font"
 cask "font-maple-mono-nf"
 cask "font-twitter-color-emoji"
@@ -258,8 +262,6 @@ cask "modrinth"
 cask "motrix"
 # Read-only disk space visualiser
 cask "neodisk"
-# Neovim Client
-cask "neovide-app"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Minecraft launcher
@@ -274,25 +276,44 @@ cask "qlstephen"
 cask "raycast"
 # Instant messaging application focusing on security
 cask "signal"
-# Connectivity software for the TI-84 Plus family of graphing calculators
-cask "ti-connect-ce"
-# Web browser focusing on security
-cask "tor-browser"
+# Open-source code editor
+cask "visual-studio-code"
 # Resources for Wacom tablets
 cask "wacom-tablet"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Menu bar app for USB-C cable diagnostics
-cask "darrylmorley/whatcable/whatcable", trusted: true
+cask "darrylmorley/whatcable/whatcable"
 # YouTube Music Desktop App
 cask "th-ch/youtube-music/youtube-music"
-# Gecko based web browser
-cask "zen"
 # Collect, organise, cite, and share research sources
 cask "zotero"
 mas "Bitwarden", id: 1352778147
-mas "DevCleaner", id: 1388020431
+mas "Current", id: 6758530974
 mas "Dropover", id: 1355679052
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Prime Video", id: 545519333
 mas "Tandem Device Updater", id: 1100870281
 mas "TestFlight", id: 899247664
+vscode "alexcvzz.vscode-sqlite"
+vscode "dbaeumer.vscode-eslint"
+vscode "ecmel.vscode-html-css"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.code-runner"
+vscode "github.vscode-pull-request-github"
+vscode "mrmlnc.vscode-postcss-sorting"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.remote-explorer"
+vscode "mvllow.rose-pine"
+vscode "rogalmic.bash-debug"
+vscode "rvest.vs-code-prettier-eslint"
+vscode "sumneko.lua"
+vscode "tonka3000.raycast"
+vscode "twxs.cmake"
+vscode "vscodevim.vim"
+vscode "wscats.eno"
