@@ -1,5 +1,5 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.2",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.4",
   "schemes" : [
     {
       "buttons" : {
@@ -75,9 +75,11 @@
     {
       "buttons" : {
         "autoScroll" : {
-          "enabled" : true,
-          "mode" : "toggle",
-          "preserveNativeMiddleClick" : true,
+          "enabled" : false,
+          "mode" : [
+            "toggle",
+            "hold"
+          ],
           "speed" : 1,
           "trigger" : {
             "button" : 2
@@ -114,6 +116,9 @@
           "vendorID" : "0x46d"
         }
       },
+      "logitech" : {
+        "highResolutionWheel" : false
+      },
       "pointer" : {
         "acceleration" : 1,
         "disableAcceleration" : true,
@@ -149,7 +154,6 @@
         "autoScroll" : {
           "enabled" : false,
           "mode" : "toggle",
-          "preserveNativeMiddleClick" : true,
           "speed" : 1,
           "trigger" : {
             "button" : 2,
