@@ -1,0 +1,29 @@
+Host uttt
+    Hostname uttt.ibll.dev
+    User root
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_digital_ocean.pub
+
+Host schooner
+    Hostname schooner.oscer.ou.edu
+    User oucspdn088
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_school_remotes.pub
+
+Host sooner
+    Hostname sooner.oscer.ou.edu
+    User oucspdn088
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_school_remotes.pub
+
+Host gpel
+  Hostname gpel8.cs.nor.ou.edu
+  User isbe0008
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_school_remotes.pub
+
+Host gpelb
+  Hostname gpel13.cs.nor.ou.edu
+  User isbe0008
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_school_remotes.pub
