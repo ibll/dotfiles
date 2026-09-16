@@ -1,17 +1,41 @@
 return {
   "snacks.nvim",
   opts = {
+    zen = {
+      toggles = {
+        dim = false,
+      },
+      win = {
+        width = 0,
+        on_win = function()
+          vim.api.nvim_set_hl(0, "SnacksHiddenCursor", { blend = 100, nocombine = true })
+          vim.opt.guicursor:append("a:SnacksHiddenCursor")
+        end,
+        on_close = function()
+          vim.opt.guicursor:remove("a:SnacksHiddenCursor")
+        end,
+        wo = {
+          colorcolumn = "",
+          cursorcolumn = false,
+          cursorline = false,
+          number = false,
+          relativenumber = false,
+          spell = false,
+        },
+      },
+    },
     dashboard = {
       -- dashboard configuration
       preset = {
         -- Rozzo typeface - https://patorjk.com/software/taag/#f=Rozzo&t=Neovim
-        header = [[
-                                    ,e,             
-888 8e   ,e e,   e88 88e  Y8b Y888P  "  888 888 8e  
-888 88b d88 88b d888 888b  Y8b Y8P  888 888 888 88b 
-888 888 888   , Y888 888P   Y8b "   888 888 888 888 
-888 888  "YeeP"  "88 88"     Y8P    888 888 888 888 
-]],
+        header = "",
+        --         header = [[
+        --                                     ,e,
+        -- 888 8e   ,e e,   e88 88e  Y8b Y888P  "  888 888 8e
+        -- 888 88b d88 88b d888 888b  Y8b Y8P  888 888 888 88b
+        -- 888 888 888   , Y888 888P   Y8b "   888 888 888 888
+        -- 888 888  "YeeP"  "88 88"     Y8P    888 888 888 888
+        -- ]],
       },
       sections = {
         { section = "header" },

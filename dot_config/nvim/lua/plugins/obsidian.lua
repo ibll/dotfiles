@@ -14,8 +14,6 @@ return {
   dependencies = {
     -- Required.
     "nvim-lua/plenary.nvim",
-
-    -- see below for full list of optional dependencies 👇
   },
   opts = {
     legacy_commands = false,
@@ -41,16 +39,11 @@ return {
 
     picker = {
       -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
-      name = "snacks.pick",
+      name = "snacks.picker",
       note_mappings = {
         new = "<C-x>",
         insert_link = "<C-l>",
       },
-    },
-
-    completion = {
-      blink = true,
-      min_chars = 2,
     },
 
     open = {
