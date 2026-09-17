@@ -10,4 +10,5 @@
 # @raycast.packageName Kitty
 # @raycast.schemaVersion 1
 
+cd ~ || exit
 kitten quick-access-terminal 2>/dev/null || true
