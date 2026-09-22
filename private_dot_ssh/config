@@ -1,5 +1,5 @@
-Host uttt
-    Hostname uttt.ibll.dev
+Host lab
+    Hostname 104.248.63.62
     User root
     IdentitiesOnly yes
     IdentityFile ~/.ssh/id_digital_ocean.pub
