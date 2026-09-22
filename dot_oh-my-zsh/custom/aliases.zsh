@@ -36,3 +36,6 @@ alias blur="kitten @ --to=unix:/tmp/kittybg set-background-opacity --toggle 0"
 
 # School
 alias omp="/opt/homebrew/opt/llvm/bin/clang -g -Wall -fopenmp"
+
+# Fun
+alias confetti="open raycast://extensions/raycast/raycast/confetti"
