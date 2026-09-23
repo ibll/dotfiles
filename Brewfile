@@ -1,3 +1,4 @@
+tap "abue-ammar/tinycast", trusted: true
 tap "b3z/small", trusted: true
 tap "darrylmorley/whatcable", trusted: true
 tap "homebrew/bundle"
@@ -8,7 +9,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "mrkai77/cask", trusted: true
 tap "teamookla/speedtest", trusted: true
-tap "th-ch/youtube-music", trusted: true
 # Core application library for C
 brew "glib"
 # TIFF library and utilities
@@ -49,8 +49,6 @@ brew "cataclysm"
 brew "cava"
 # Object-file caching compiler wrapper
 brew "ccache"
-# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
-brew "certbot"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Play, record, convert, and stream select audio and video codecs
@@ -65,8 +63,6 @@ brew "cmake"
 brew "cmatrix"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Apjanke's fork of the classic cowsay project
-brew "cowsay"
 # GNU Emacs text editor
 brew "emacs"
 # Extra modules and scripts for CMake
@@ -183,8 +179,6 @@ brew "rust"
 brew "rust-analyzer"
 # Database of common MIME types
 brew "shared-mime-info"
-# Prints a steam locomotive if you type sl instead of ls
-brew "sl"
 # Modernized, complete, self-contained TeX/LaTeX engine
 brew "tectonic"
 # User interface to the TELNET protocol
@@ -197,22 +191,16 @@ brew "thefuck"
 brew "timg"
 # Terminal multiplexer
 brew "tmux"
-# Mastodon CLI & TUI
-brew "toot"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Parser generator tool
 brew "tree-sitter-cli"
-# Terminal UI OS (Terminal Multiplexer)
-brew "tuios"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
 # Pager/text based browser
 brew "w3m"
 # Extensible IRC client
 brew "weechat"
-# Customizable Tetris for the terminal
-brew "yetris"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Feature-rich command-line audio/video downloader
@@ -225,16 +213,10 @@ brew "teamookla/speedtest/speedtest"
 cask "arc"
 # Desktop password and login vault
 cask "bitwarden"
-# 3D model editor for boxy models and pixel art textures
-cask "blockbench"
 # Screen capturing tool
 cask "cleanshot"
-# C and C++ IDE
-cask "clion"
-# Guitar Hero clone
-cask "clone-hero"
-# Use and switch graphics packs with Dwarf Fortress without corrupting your game
-cask "dwarf-fortress-lmp"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 cask "font-hack-nerd-font"
 cask "font-maple-mono-nf"
 cask "font-twitter-color-emoji"
@@ -242,24 +224,14 @@ cask "font-twitter-color-emoji"
 cask "hiddenbar"
 # Free and open-source media player
 cask "iina"
-# Java IDE by JetBrains
-cask "intellij-idea"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # GPU-based terminal emulator
 cask "kitty"
-# Free and open-source painting and sketching program
-cask "krita"
 # Customise mouse behavior
 cask "linearmouse"
-# Tool to create bootable USB installers
-cask "macusb"
 # UI replacement for volume, brightness and now playing controls
 cask "mediamate"
-# Minecraft modding platform
-cask "modrinth"
-# Open-source download manager
-cask "motrix"
 # Read-only disk space visualiser
 cask "neodisk"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -268,10 +240,6 @@ cask "obsidian"
 cask "prismlauncher"
 # VPN client focusing on security
 cask "protonvpn"
-# Quick Look plug-in that renders source code with syntax highlighting
-cask "qlcolorcode"
-# Quick Look plugin for plaintext files without an extension
-cask "qlstephen"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Instant messaging application focusing on security
@@ -280,26 +248,18 @@ cask "signal"
 cask "visual-studio-code"
 # Resources for Wacom tablets
 cask "wacom-tablet"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
 # Menu bar app for USB-C cable diagnostics
 cask "darrylmorley/whatcable/whatcable"
-# YouTube Music Desktop App
-cask "th-ch/youtube-music/youtube-music"
-# Collect, organise, cite, and share research sources
-cask "zotero"
 mas "Bitwarden", id: 1352778147
 mas "Current", id: 6758530974
 mas "Dropover", id: 1355679052
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Tandem Device Updater", id: 1100870281
-mas "TestFlight", id: 899247664
 vscode "alexcvzz.vscode-sqlite"
 vscode "dbaeumer.vscode-eslint"
 vscode "ecmel.vscode-html-css"
 vscode "esbenp.prettier-vscode"
-vscode "formulahendry.code-runner"
 vscode "github.vscode-pull-request-github"
 vscode "mrmlnc.vscode-postcss-sorting"
 vscode "ms-vscode-remote.remote-ssh"
@@ -312,6 +272,7 @@ vscode "ms-vscode.remote-explorer"
 vscode "mvllow.rose-pine"
 vscode "rogalmic.bash-debug"
 vscode "rvest.vs-code-prettier-eslint"
+vscode "saoudrizwan.claude-dev"
 vscode "sumneko.lua"
 vscode "tonka3000.raycast"
 vscode "twxs.cmake"
