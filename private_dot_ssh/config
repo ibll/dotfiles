@@ -17,17 +17,16 @@ Host sooner
   IdentitiesOnly yes
   IdentityFile ~/.ssh/id_school_remotes.pub
 
+# Default to gpel13
 Host gpel
-  Hostname gpel8.cs.nor.ou.edu
-  User isbe0008
-  IdentitiesOnly yes
-  IdentityFile ~/.ssh/id_school_remotes.pub
-
-Host gpelb
   Hostname gpel13.cs.nor.ou.edu
-  User isbe0008
-  IdentitiesOnly yes
-  IdentityFile ~/.ssh/id_school_remotes.pub
+
+# For explicitly numbered gpel hosts, use the number provided
+Host gpel*
+    Hostname %h.cs.nor.ou.edu
+    User isbe0008
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/id_school_remotes
 
 Host dos
   Hostname dos7.cs.ourcloud.ou.edu
