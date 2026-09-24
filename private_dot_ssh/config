@@ -1,6 +1,7 @@
 Host lab
   Hostname 104.248.63.62
   User root
+  ForwardAgent yes
   IdentitiesOnly yes
   IdentityFile ~/.ssh/id_digital_ocean.pub
 

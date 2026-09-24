@@ -13,7 +13,7 @@ alias python="python3"
 # Utilities
 alias t="htop"
 alias vi="nvim"
-alias ls="lsd"
+alias ls="lsd --hyperlink='auto'"
 alias neofetch="neowofetch"
 alias disc="ncdu -x /"
 alias lg="lazygit"

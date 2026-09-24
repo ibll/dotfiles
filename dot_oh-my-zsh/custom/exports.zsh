@@ -1,6 +1,8 @@
 # Sets default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PAGER="nvim -R -c 'set buftype=nofile bufhidden=hide noswapfile' -"
+export MANPAGER="nvim +Man!"
 
 # Path
 export PATH=/Users/isbell/.nimble/bin:$PATH
