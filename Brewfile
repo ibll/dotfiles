@@ -185,8 +185,6 @@ brew "tectonic"
 brew "telnet"
 # Powerful free data recovery utility
 brew "testdisk"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Terminal image and video viewer
 brew "timg"
 # Terminal multiplexer
@@ -224,8 +222,6 @@ cask "font-twitter-color-emoji"
 cask "hiddenbar"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # GPU-based terminal emulator
 cask "kitty"
 # Customise mouse behavior
@@ -244,6 +240,8 @@ cask "protonvpn"
 cask "raycast"
 # Instant messaging application focusing on security
 cask "signal"
+# Search and click text anywhere on screen
+cask "superkey"
 # Open-source code editor
 cask "visual-studio-code"
 # Resources for Wacom tablets
