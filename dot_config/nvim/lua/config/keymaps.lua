@@ -4,6 +4,7 @@
 
 local allModes = { "n", "v", "s", "o", "i", "c", "x" }
 
+-- Easy remove last word
 vim.keymap.set("i", "<M-BS>", "<C-W>")
 
 -- Easy $ and ^
