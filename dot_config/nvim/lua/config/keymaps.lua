@@ -4,6 +4,8 @@
 
 local allModes = { "n", "v", "s", "o", "i", "c", "x" }
 
+vim.keymap.set("i", "<M-BS>", "<C-W>")
+
 -- Easy $ and ^
 vim.keymap.set("n", "H", "^", { noremap = true, silent = true, desc = "Go to Start" })
 vim.keymap.set("n", "L", "$", { noremap = true, silent = true, desc = "Go to End" })
